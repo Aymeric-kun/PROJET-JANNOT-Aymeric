@@ -1,0 +1,25 @@
+
+<div class="container">
+<app-filterproduct (filter)="search($event)" class="centrer"></app-filterproduct>
+
+
+<div class="clr-row center" *ngFor="let x of productFilter">
+    <div class="clr-col-lg-4 clr-col-12">
+      <div class="card card-block">
+        <div class="card-block">
+          <h3 class="card-title">{{x.name}}</h3>
+          <p class="card-text">
+            {{x.detail}}<br>
+            {{x.info}}
+          </p>
+          <div>{{x.price}}</div>
+        </div>
+        <div class="card-footer">
+          <a href="javascript:void(0)" class="btn btn-sm btn-link">Commander</a>
+        </div>
+      </div>
+    </div>
+    
+
+<div *ngIf="isEmpty" class="alert alert-danger">Il n'y a pas de produit.</div>
+</div>
