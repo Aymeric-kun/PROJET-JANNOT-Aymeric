@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {Store} from '@ngxs/store';
+
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'TP3-JANNOT-Aymeric';
+  constructor(private store: Store) {
+
+  }
 }

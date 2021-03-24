@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { product } from '../model/product';
+import { product } from '../../../../shared/model/product';
 import { ListproductService } from './listproduct.service';
 
 @Component({
@@ -23,7 +23,7 @@ export class ListproductComponent implements OnInit {
       this.product = res;
       this.productFilter = res;
       console.log(this.product);
-    }); 
+    });
   }
 
   search(filter : string) {
@@ -34,12 +34,12 @@ export class ListproductComponent implements OnInit {
     if(this.filter === ""){
       this.productFilter = this.product;
       return;
-    } 
+    }
 
     for(let i = 0; i<this.product.length; i++){
       if (this.product[i].name.toLowerCase().includes(this.filter.toLowerCase().trim())){
         this.productFilter.push(this.product[i]);
-      } 
+      }
     }
 
     if(this.productFilter.length==0) {

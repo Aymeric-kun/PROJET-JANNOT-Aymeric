@@ -1,24 +1,29 @@
 [{
+  "id": 1,
   "name": "Thé",
   "detail": "Thé en sachet à faire infuser",
   "price": "0.5€",
   "info": "This is the latest and greatest product from Derp corp."
 },{
+  "id": 2,
   "name": "Café",
   "detail": "Café moulu en grain",
   "price":"0.5€",
   "info": "This is the latest and greatest product from Derp corp."
 },{
+  "id": 3,
   "name": "Jus de fruit",
   "detail": "Jus de pomme ou jus d'orange",
   "price": "1€",
   "info": "This is the latest and greatest product from Derp corp."
 },{
+  "id": 4,
   "name": "Coca",
   "detail": "Coca cola version original",
   "price": "1.5€",
   "info": "This is the latest and greatest product from Derp corp."
 },{
+  "id": 5,
   "name": "Fanta",
   "detail": "Fanta orange classique",
   "price": "1.5€",

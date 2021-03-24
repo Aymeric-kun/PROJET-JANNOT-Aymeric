@@ -1,0 +1,65 @@
+<form  class="form-horizontal"
+       #signupForm = "ngForm">
+
+  <div class="form-group">
+    M. <input type="radio"  name="sexe"  [(ngModel)]="civilite" value="Monsieur">
+    Mme. <input type="radio"  name="sexe" [(ngModel)]="civilite" value="Madame">
+    Autre <input type="radio"  name="sexe" [(ngModel)]="civilite" value="Autre" checked="checked">
+  </div>
+
+  <div class="form-group">
+    <label for="nom">Nom</label>
+    <input type="text" class="form-control" [(ngModel)]="nom" maxlength="50" id="nom">
+  </div>
+
+  <div class="form-group">
+    <label for="prenom">Prénom</label>
+    <input type="text" class="form-control" [(ngModel)]="prenom" maxlength="50" id="prenom">
+  </div>
+
+  <div class="form-group">
+    <label for="adresse">Adresse</label>
+    <input type="text" class="form-control" [(ngModel)]="adresse" maxlength="250" id="adresse">
+  </div>
+
+  <div class="form-group">
+    <label for="ville">Ville</label>
+    <input type="text" class="form-control" [(ngModel)]="ville" maxlength="50" id="ville">
+  </div>
+
+  <div class="form-group">
+    <label for="cp">Code Postal</label>
+    <input type="text" class="form-control" [(ngModel)]="codepostal"  maxlength="5" id="cp">
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" class="form-control" [(ngModel)]="email"  id="email">
+  </div>
+
+  <div class="form-group">
+    <label for="telephone">N° de téléphone</label>
+    <input type="text" class="form-control" [(ngModel)]="telephone"  id="telephone">
+  </div>
+
+
+  <div class="form-group">
+    <label for="username">Nom d'utilisateur</label>
+    <input type="text" class="form-control" [(ngModel)]="username" maxlength="20" id="username">
+  </div>
+
+  <div class="form-group">
+    <label for="password">Mot de passe (8 caractères minimum)</label>
+    <input type="password" class="form-control" [(ngModel)]="password"  id="password">
+  </div>
+
+  <div class="form-group">
+    <label for="confirmpassword">Confirmer mot de passe</label>
+    <input type="password" class="form-control" [(ngModel)]="confirmpassword"  id="confirmpassword">
+  </div>
+
+  <div class="form-group">
+    <input type="submit" class="btn btn-primary" (click)="valider()" value="Envoyer">
+  </div>
+  <app-informations *ngIf="validation==true" [client]="data"></app-informations>
+</form>
