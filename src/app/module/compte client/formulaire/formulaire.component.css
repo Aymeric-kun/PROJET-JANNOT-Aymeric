@@ -1,4 +1,9 @@
 .form-group {
   width: 350px;
-  padding-left: 2em;
+
+}
+
+.centre {
+  margin-top: 15px;
+  margin-left: 30em;
 }

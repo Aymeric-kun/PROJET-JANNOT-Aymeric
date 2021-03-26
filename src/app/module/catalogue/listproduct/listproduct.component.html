@@ -15,11 +15,10 @@
           <div>{{x.price}}</div>
         </div>
         <div class="card-footer">
-          <a href="javascript:void(0)" class="btn btn-sm btn-link">Ajouter au panier</a>
-        </div>
+          <input class="btn btn-outline" type="button" (click)="addCart(x.id, x.name, x.price, x.info, x.detail, x.picture)" value="Ajouter au panier"/>
       </div>
     </div>
-
-
-<div *ngIf="isEmpty" class="alert alert-danger">Il n'y a pas de produit.</div>
+</div>
+</div>
+  <div *ngIf="isEmpty" class="alert alert-danger">Il n'y a pas de produit.</div>
 </div>

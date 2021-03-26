@@ -19,8 +19,10 @@ export class DetailComponent implements OnInit {
     });
   }
 
-  ngOnInit(){
+  ref : string = "";
 
+  ngOnInit(){
+    this.ref = this.route.snapshot.paramMap.get('id');
   }
 
 }

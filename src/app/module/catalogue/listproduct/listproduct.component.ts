@@ -1,6 +1,11 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { product } from '../../../../shared/model/product';
 import { ListproductService } from './listproduct.service';
+import { Store } from '@ngxs/store';
+import { AddCart } from '../../../../shared/actions/panier.action';
+import {Observable} from 'rxjs';
+import {PanierState} from '../../../../shared/states/panierstate';
+
 
 @Component({
   selector: 'app-listproduct',
@@ -9,16 +14,21 @@ import { ListproductService } from './listproduct.service';
 })
 export class ListproductComponent implements OnInit {
 
+  Product$ : Observable<product[]>
+
   public product : product[] = [];
   public productFilter : product[] = [];
   public isEmpty : boolean = false;
 
   @Input() filter : String;
 
-  constructor(public listProduct : ListproductService) { }
+  constructor(public listProduct : ListproductService, private store : Store) { }
+
+  addCart(id, name, picture, price, info, detail){
+    this.store.dispatch(new AddCart({id : id, name : name, detail : detail, info : info, picture : picture, price : price}))
+  }
 
   ngOnInit() {
-
     this.listProduct.getProduct().subscribe(res => {
       this.product = res;
       this.productFilter = res;
@@ -46,6 +56,5 @@ export class ListproductComponent implements OnInit {
       this.isEmpty = true;
     }
   }
-
 
 }
