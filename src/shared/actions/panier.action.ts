@@ -11,7 +11,7 @@ export class AddCart {
 export class RemoveCart {
   static readonly type = '[PANIER] Retirer';
 
-  constructor(public payload: string) {
+  constructor(public payload: product) {
 
   }
 }

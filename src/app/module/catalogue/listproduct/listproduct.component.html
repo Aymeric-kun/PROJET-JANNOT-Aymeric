@@ -1,21 +1,21 @@
-
-<div class="container">
 <app-filterproduct (filter)="search($event)" class="centrer"></app-filterproduct>
-
-
-<div class="clr-row center" *ngFor="let x of productFilter">
+<div class="container-fluid">
+<div class="clr-row" *ngFor="let x of productFilter">
     <div class="clr-col-lg-4 clr-col-12">
       <div class="card card-block">
         <div class="card-block">
           <h3 class="card-title">{{x.name}}</h3>
           <p class="card-text">
-            {{x.detail}}<br>
-            {{x.info}}
+            <img
+              class="image"
+              src="../../../../../assets/img/{{x.picture}}"
+              />
           </p>
           <div>{{x.price}}</div>
         </div>
         <div class="card-footer">
-          <input class="btn btn-outline" type="button" (click)="addCart(x.id, x.name, x.price, x.info, x.detail, x.picture)" value="Ajouter au panier"/>
+          <input class="btn btn-outline" type="button" (click)="addCart(x.id, x.name, x.price, x.info, x.detail, x.picture)" value="Ajouter au panier"/><br>
+          <a [routerLink] = "['/catalogue/detail',x.id]" > Détail du produit</a>
       </div>
     </div>
 </div>

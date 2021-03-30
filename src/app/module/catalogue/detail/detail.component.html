@@ -1,1 +1,20 @@
+<div class="align">
+  <div class="">
+    <h2>Détail du produit :</h2>
+    <br />
+    <img
+      class="image"
+      src="../../../../../assets/img/{{ productSelected.picture }}"
+    />
+    <h3>Nom : {{ productSelected.name }}</h3>
+    <br />
+  </div>
 
+  <div class="info">
+    Prix :<i> {{ productSelected.price }}</i
+    ><br />
+    {{ productSelected.info }}<br />
+    {{ productSelected.detail }}<br />
+  </div>
+  <input class="btn btn-outline" type="button" (click)="addClick(productSelected.id, productSelected.name, productSelected.price, productSelected.info, productSelected.detail, productSelected.picture)" value="Ajouter au panier"/><br>
+</div>

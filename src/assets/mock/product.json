@@ -1,31 +1,30 @@
 [{
-  "id": 1,
-  "name": "Thé",
-  "detail": "Thé en sachet à faire infuser",
-  "price": "0.5€",
-  "info": "This is the latest and greatest product from Derp corp."
+  "id": "1",
+  "name": "Tisanière en grès",
+  "detail": "Plongez dans l'univers scandinave avec cette tisanière OGO LIVING Ce mug de 48Cl au design nordique et doté d'un couvercle en acacia vous permettra de déguster votre thé en totale sérénité.",
+  "price": "19.90€",
+  "info": "Ogo Living est une marque française qui développe des accessoires du quotidien alliant beauté et utilité.",
+  "picture" : "tasse.png"
 },{
-  "id": 2,
-  "name": "Café",
-  "detail": "Café moulu en grain",
-  "price":"0.5€",
-  "info": "This is the latest and greatest product from Derp corp."
+  "id": "2",
+  "name": "White Bellini bio",
+  "detail": "Le thé blanc pêche-abricot qui coule à flots ! C’est le jour J ! Au programme, le brunch de vos rêves. Dès votre arrivée, vos yeux se mettent à briller. Au menu, un festin tout en extravagance. Des fauteuils aussi moelleux que les canapés du buffet. Un décor sur-mesure où règne la démesure.",
+  "price":"19.90€",
+  "info": "Thé blanc* (68%), thé vert* (27%), arôme naturel de pêche et d’abricot (5%) *Produits issus de l'agriculture biologique",
+   "picture": "the2.png"
 },{
-  "id": 3,
-  "name": "Jus de fruit",
-  "detail": "Jus de pomme ou jus d'orange",
-  "price": "1€",
-  "info": "This is the latest and greatest product from Derp corp."
+  "id": "3",
+  "name": "Tropical White bio",
+  "detail": "Changez de décor avec Tropical White bio, un thé blanc à la mangue et au fruit de la passion. Silence, on tourne. Tropical White bio va vous captiver, avec son scénario tout en subtilité !",
+  "price": "19.90€",
+  "info": "Thé blanc*, thé vert*, arômes (mangue, passion). *Produits issus de l'agriculture biologique",
+  "picture" : "the3.png"
+  
 },{
-  "id": 4,
-  "name": "Coca",
-  "detail": "Coca cola version original",
-  "price": "1.5€",
-  "info": "This is the latest and greatest product from Derp corp."
-},{
-  "id": 5,
-  "name": "Fanta",
-  "detail": "Fanta orange classique",
-  "price": "1.5€",
-  "info": "This is the latest and greatest product from Derp corp."
+  "id": "4",
+  "name": "Vert rose bio",
+  "detail": "Un thé vert bio et floral, subtilement parfumé à la rose. Offrez-vous un instant de bonheur avec ce thé vert bio aromatisé à la rose qui évoque un bouquet de fleurs délicieusement parfumé. A la dégustation, ce thé vert apporte toute la fraîcheur et la subtilité de la rose pour une pause délicate au cours de la journée. ",
+  "price": "13.90€",
+  "info": "Thé vert*, arôme rose. *Produit issu de l'agriculture biologique.",
+  "picture" : "the4.png"
 }]

@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import {Component, OnInit, Output, EventEmitter, Input} from '@angular/core';
 
 @Component({
   selector: 'app-filterproduct',
@@ -7,12 +7,12 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class FilterproductComponent implements OnInit {
 
-  @Output() filter : EventEmitter<string> = new EventEmitter<string>(); 
+  @Output() filter : EventEmitter<string> = new EventEmitter<string>();
   filterName : string = "";
 
   constructor() { }
 
-  
+
 
   ngOnInit(): void {
   }

@@ -10,11 +10,11 @@ import { PanierStateModel} from './panierstatemodel';
   }
 })
 
-@Injectable()
+//@Injectable()
 export class PanierState {
   @Selector()
   static getPaniers(state: PanierStateModel){
-    return state.panier.length
+    return state.panier.length;
   }
 
   @Action(AddCart)
@@ -27,8 +27,10 @@ export class PanierState {
 
   @Action(RemoveCart)
   remove({getState, patchState}: StateContext<PanierStateModel>, {payload}:RemoveCart){
+    const state = getState();
     patchState({
-      panier: getState().panier.filter(a => a.name != payload)
-    })
+      //panier: getState().panier.filter(i => i.name != payload)
+      panier: [...(state.panier.filter(i => !(i.name.match(payload.name))))]
+    });
   }
 }

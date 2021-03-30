@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import {Store} from '@ngxs/store';
 
 
 @Component({
@@ -8,7 +7,6 @@ import {Store} from '@ngxs/store';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  constructor(private store: Store) {
-
-  }
+  constructor() {  }
+  title ='tp4'
 }

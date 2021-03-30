@@ -1,15 +1,18 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light ">
     <div class="container-fluid">
-    <ul class="nav navbar-nav">
+    <ul class="nav ">
         <li class="nav-item">
           <a routerLinkActive="active" [routerLink]="['/']">Accueil</a>
         </li>
         <li class="nav-item">
-          <a routerLinkActive="active" [routerLink]="['catalogue']">Catalogue</a>
+          <a routerLinkActive="active"  [routerLink]="['/catalogue']">Catalogue</a>
         </li>
         <li class="nav-item">
-          <a routerLinkActive="active" [routerLink]="['espace-client']">Espace Client</a>
+          <a routerLinkActive="active"  [routerLink]="['/profil']">Espace Client</a>
         </li>
     </ul>
+      <div class="navbar-right">
+        <a routerLinkActive="active"  [routerLink]="['panier']">Panier({{nbElementPanier}})</a>
+      </div>
   </div>
 </nav>

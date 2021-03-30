@@ -1,1 +1,6 @@
-<p>panier works!</p>
+<div *ngFor="let  i of article | async">
+  <h1>Article : {{i.name}} à {{i.picture}}</h1>
+  <img class="image" src="../../../../assets/img/{{i.detail}}" >  
+  <button class="btn " (click)="delClick(i)">Supprimer l'article</button>
+</div>
+<div *ngIf="isEmpty" class="alert alert-danger">Il n'y a pas de produit.</div>
